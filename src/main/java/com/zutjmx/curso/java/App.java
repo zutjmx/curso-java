@@ -3,20 +3,21 @@ package com.zutjmx.curso.java;
 import com.zutjmx.curso.java.comun.EjemploJavaUtilCalendar;
 
 /**
- * Hello world!
+ * Clase principal App
  */
 public final class App {
     private App() {
     }
 
     /**
-     * Says hello to the world.
+     * Método main de la clase App
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
         EjemploJavaUtilCalendar calendar = new EjemploJavaUtilCalendar();
-        System.out.println("Hola Mundo de cero a experto.");
-        System.out.println("Prueba de la clase Calendar");
+        System.out.println("Se ejecuta clase principal com.zutjmx.curso.java.App");
+        System.out.println("App.main()");
+        System.out.println("Prueba de la clase EjemploJavaUtilCalendar");
         calendar.principalCalendar();
     }
 }
