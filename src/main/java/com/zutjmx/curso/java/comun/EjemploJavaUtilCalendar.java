@@ -4,6 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Scanner;
 
 /**
  * EjemploJavaUtilCalendar
@@ -37,14 +38,21 @@ public class EjemploJavaUtilCalendar {
     }
 
     public void dateParse() {
-        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-        try {
-            Date fecha = format.parse("11/12/1969");
-            System.out.println("Fecha: " + fecha);
-            System.out.println("Fecha con formato: " + format.format(fecha));
-        } catch (ParseException e) {
-            e.printStackTrace();
-            System.out.println("No se pudo convertir la fecha: " + e.getMessage());
+        try (Scanner scanner = new Scanner(System.in)) {
+            
+            SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+            
+            System.out.println("Ingrese una fecha con formato (DD/MM/AAAA):");
+            
+            try {
+                Date fecha = format.parse(scanner.next());
+                System.out.println("Fecha: " + fecha);
+                System.out.println("Fecha con formato: " + format.format(fecha));
+            } catch (ParseException e) {
+                e.printStackTrace();
+                System.out.println("No se pudo convertir la fecha: " + e.getMessage());
+            }
+            
         }
     }
 }
