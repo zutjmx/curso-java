@@ -1,5 +1,7 @@
 package com.zutjmx.curso.java.comun;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 public class EjemploPropiedadesSistema {
@@ -21,5 +23,29 @@ public class EjemploPropiedadesSistema {
         Properties properties = System.getProperties();
         System.out.println("===========");
         properties.list(System.out);
+    }
+
+    public void obtenerPropiedades() {
+        try (
+            FileInputStream fileInputStream = new FileInputStream("src\\main\\java\\com\\zutjmx\\curso\\java\\config\\config.properties")
+        ) {
+            System.out.println("EjemploPropiedadesSistema.obtenerPropiedades()");
+            Properties properties = new Properties(System.getProperties());
+            properties.load(fileInputStream);
+            properties.setProperty("mi.valor.propio", "Mi Valor Propio");
+
+            System.setProperties(properties);
+
+            Properties ps = System.getProperties();
+
+            System.out.println("clave: " + ps.getProperty("clave"));
+            System.out.println("config.autor.email: " + System.getProperty("config.autor.email"));
+
+            ps.list(System.out);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("No existe el archivo: " + e.getMessage());
+        }
     }
 }
