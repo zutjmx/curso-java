@@ -1,5 +1,6 @@
 package com.zutjmx.curso.java.comun;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -33,5 +34,17 @@ public class EjemploJavaUtilCalendar {
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         String fechaString = formato.format(fecha);
         System.out.println("Fecha con formato: " + fechaString);
+    }
+
+    public void dateParse() {
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+        try {
+            Date fecha = format.parse("11/12/1969");
+            System.out.println("Fecha: " + fecha);
+            System.out.println("Fecha con formato: " + format.format(fecha));
+        } catch (ParseException e) {
+            e.printStackTrace();
+            System.out.println("No se pudo convertir la fecha: " + e.getMessage());
+        }
     }
 }

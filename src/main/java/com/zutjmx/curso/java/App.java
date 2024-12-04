@@ -23,6 +23,8 @@ public final class App {
         System.out.println("Prueba de la clase EjemploJavaUtilCalendar");
         calendar.principalCalendar();
 
+        calendar.dateParse();
+
         System.out.println("Prueba de la clase Faker");
         miFaker.PruebaFaker();
     }
