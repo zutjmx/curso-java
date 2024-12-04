@@ -55,4 +55,44 @@ public class EjemploJavaUtilCalendar {
             
         }
     }
+
+    public void comprobarFecha() {
+        try (Scanner scanner = new Scanner(System.in)) {
+            
+            SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+            
+            System.out.println("Ingrese una fecha con formato (DD/MM/AAAA):");
+            
+            try {
+                Date fecha = format.parse(scanner.next());
+                System.out.println("Fecha: " + fecha);
+                System.out.println("Fecha con formato: " + format.format(fecha));
+
+                Date fechaDos = new Date();
+                System.out.println("Fecha del sistema: " + fechaDos);
+
+                /* if (fecha.after(fechaDos)) {
+                    System.out.println("La fecha ingresada es mayor a la fecha del sistema.");
+                } else if (fecha.before(fechaDos)) {
+                    System.out.println("La fecha ingresada es menor a la fecha del sistema.");
+                } else if (fecha.equals(fechaDos)) {
+                    System.out.println("La fecha ingresada es igual a la fecha del sistema.");
+                } */
+
+                if (fecha.compareTo(fechaDos) > 0) {
+                    System.out.println("La fecha ingresada es mayor a la fecha del sistema.");
+                } else if (fecha.compareTo(fechaDos) < 0) {
+                    System.out.println("La fecha ingresada es menor a la fecha del sistema.");
+                } else if (fecha.compareTo(fechaDos) == 0) {
+                    System.out.println("La fecha ingresada es igual a la fecha del sistema.");
+                }
+
+            } catch (ParseException e) {
+                e.printStackTrace();
+                System.out.println("No se pudo convertir la fecha: " + e.getMessage());
+            }
+            
+        }
+    }
+
 }

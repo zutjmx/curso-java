@@ -21,9 +21,11 @@ public final class App {
         System.out.println("Se ejecuta clase principal com.zutjmx.curso.java.App");
         System.out.println("App.main()");
         System.out.println("Prueba de la clase EjemploJavaUtilCalendar");
-        calendar.principalCalendar();
+        
+        //calendar.principalCalendar();
+        //calendar.dateParse();
 
-        calendar.dateParse();
+        calendar.comprobarFecha();
 
         System.out.println("Prueba de la clase Faker");
         miFaker.PruebaFaker();
