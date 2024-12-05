@@ -2,6 +2,8 @@ package com.zutjmx.curso.java.comun;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Map.Entry;
+import java.util.Map;
 import java.util.Properties;
 
 public class EjemploPropiedadesSistema {
@@ -47,5 +49,14 @@ public class EjemploPropiedadesSistema {
             e.printStackTrace();
             System.out.println("No existe el archivo: " + e.getMessage());
         }
+    }
+
+    public void obtenerVariablesDeEntorno() {
+        Map<String, String> envMap = System.getenv();
+        System.out.println("EjemploPropiedadesSistema.obtenerVariablesDeEntorno()");
+        System.out.println("Variables de ambiente:");
+        for (Entry<String, String> entry : envMap.entrySet()) {
+            System.out.println(entry.getKey() + " = " + entry.getValue());
+        }        
     }
 }

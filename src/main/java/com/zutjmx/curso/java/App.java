@@ -20,7 +20,8 @@ public final class App {
         System.out.println("App.main()");
 
         EjemploPropiedadesSistema sistema = new EjemploPropiedadesSistema();
-        sistema.obtenerPropiedades();
+        sistema.obtenerVariablesDeEntorno();
+        //sistema.obtenerPropiedades();
         //sistema.metodoPrincipal();
         
         //EjemploJavaUtilCalendar calendar = new EjemploJavaUtilCalendar();
