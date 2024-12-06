@@ -1,6 +1,9 @@
 package com.zutjmx.curso.java;
 
-import com.zutjmx.curso.java.astradb.AstraDbConfig;
+// import java.io.IOException;
+
+// import com.zutjmx.curso.java.clienterest.EstadisticaCovid;
+//import com.zutjmx.curso.java.astradb.AstraDbConfig;
 import com.zutjmx.curso.java.comun.EjemploPropiedadesSistema;
 
 // import com.zutjmx.curso.java.comun.EjemploJavaUtilCalendar;
@@ -38,6 +41,14 @@ public final class App {
         // AstraDbConfig astraDbConfig = new AstraDbConfig();
         // astraDbConfig.conecta();
         // astraDbConfig.exploraDb();
+
+        // EstadisticaCovid estadisticaCovid = new EstadisticaCovid();
+        // try {
+        //     estadisticaCovid.reporteTotal();
+        // } catch (IOException e) {
+        //     e.printStackTrace();
+        //     System.out.println("Error al consultar la estadisca de covid19: " + e.getMessage());
+        // }
 
     }
 }
