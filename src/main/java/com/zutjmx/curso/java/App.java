@@ -1,5 +1,6 @@
 package com.zutjmx.curso.java;
 
+import com.zutjmx.curso.java.astradb.AstraDbConfig;
 import com.zutjmx.curso.java.comun.EjemploPropiedadesSistema;
 
 // import com.zutjmx.curso.java.comun.EjemploJavaUtilCalendar;
@@ -33,6 +34,10 @@ public final class App {
         // MiFaker miFaker = new MiFaker();
         // System.out.println("Prueba de la clase Faker");
         // miFaker.PruebaFaker();
+
+        // AstraDbConfig astraDbConfig = new AstraDbConfig();
+        // astraDbConfig.conecta();
+        // astraDbConfig.exploraDb();
 
     }
 }
