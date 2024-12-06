@@ -55,8 +55,19 @@ public class EjemploPropiedadesSistema {
         Map<String, String> envMap = System.getenv();
         System.out.println("EjemploPropiedadesSistema.obtenerVariablesDeEntorno()");
         System.out.println("Variables de ambiente:");
+        
         for (Entry<String, String> entry : envMap.entrySet()) {
             System.out.println(entry.getKey() + " = " + entry.getValue());
-        }        
+        }
+
+        String javaHome = System.getenv("JAVA_HOME");
+        System.out.println("JAVA_HOME: ".concat(javaHome));        
+
+        String astraDbApiEndPoint = System.getenv("ASTRA_DB_API_ENDPOINT");
+        System.out.println("ASTRA_DB_API_ENDPOINT: ".concat(astraDbApiEndPoint));
+        
+        String astraDbAppToken = System.getenv("ASTRA_DB_APPLICATION_TOKEN");
+        System.out.println("ASTRA_DB_APPLICATION_TOKEN: ".concat(astraDbAppToken));
+
     }
 }
