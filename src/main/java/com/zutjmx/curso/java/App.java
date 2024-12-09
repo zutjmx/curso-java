@@ -5,6 +5,7 @@ package com.zutjmx.curso.java;
 // import com.zutjmx.curso.java.clienterest.EstadisticaCovid;
 //import com.zutjmx.curso.java.astradb.AstraDbConfig;
 import com.zutjmx.curso.java.comun.EjemploPropiedadesSistema;
+// import com.zutjmx.curso.java.sqlserver.SqlServerConfig;
 
 // import com.zutjmx.curso.java.comun.EjemploJavaUtilCalendar;
 // import com.zutjmx.curso.java.comun.MiFaker;
@@ -27,6 +28,9 @@ public final class App {
         sistema.obtenerVariablesDeEntorno();
         //sistema.obtenerPropiedades();
         //sistema.metodoPrincipal();
+
+        // SqlServerConfig sqlServerConfig = new SqlServerConfig();
+        // sqlServerConfig.conectaSelect();
         
         //EjemploJavaUtilCalendar calendar = new EjemploJavaUtilCalendar();
         //System.out.println("Prueba de la clase EjemploJavaUtilCalendar");
