@@ -1,10 +1,12 @@
 package com.zutjmx.curso.java;
 
+import com.zutjmx.curso.java.comun.EjecutarProgramaSO;
+
 // import java.io.IOException;
 
 // import com.zutjmx.curso.java.clienterest.EstadisticaCovid;
 //import com.zutjmx.curso.java.astradb.AstraDbConfig;
-import com.zutjmx.curso.java.comun.EjemploPropiedadesSistema;
+// import com.zutjmx.curso.java.comun.EjemploPropiedadesSistema;
 // import com.zutjmx.curso.java.sqlserver.SqlServerConfig;
 
 // import com.zutjmx.curso.java.comun.EjemploJavaUtilCalendar;
@@ -24,9 +26,12 @@ public final class App {
     public static void main(String[] args) {
         System.out.println("App.main()");
 
-        EjemploPropiedadesSistema sistema = new EjemploPropiedadesSistema();
+        EjecutarProgramaSO ejecutarProgramaSO = new EjecutarProgramaSO();
+        ejecutarProgramaSO.ejecutar();
+
+        // EjemploPropiedadesSistema sistema = new EjemploPropiedadesSistema();
         //sistema.obtenerVariablesDeEntorno();
-        sistema.obtenerPropiedades();
+        // sistema.obtenerPropiedades();
         //sistema.metodoPrincipal();
 
         // SqlServerConfig sqlServerConfig = new SqlServerConfig();
