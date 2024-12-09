@@ -69,5 +69,10 @@ public class EjemploPropiedadesSistema {
         String astraDbAppToken = System.getenv("ASTRA_DB_APPLICATION_TOKEN");
         System.out.println("ASTRA_DB_APPLICATION_TOKEN: ".concat(astraDbAppToken));
 
+        String faunaKey = envMap.get("FAUNA_KEY");
+        String faunaSecret = envMap.get("FAUNA_SECRET");
+        System.out.println("FAUNA_KEY: ".concat(faunaKey));
+        System.out.println("FAUNA_SECRET: ".concat(faunaSecret));
+
     }
 }
