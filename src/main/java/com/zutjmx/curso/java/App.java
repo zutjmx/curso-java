@@ -25,8 +25,8 @@ public final class App {
         System.out.println("App.main()");
 
         EjemploPropiedadesSistema sistema = new EjemploPropiedadesSistema();
-        sistema.obtenerVariablesDeEntorno();
-        //sistema.obtenerPropiedades();
+        //sistema.obtenerVariablesDeEntorno();
+        sistema.obtenerPropiedades();
         //sistema.metodoPrincipal();
 
         // SqlServerConfig sqlServerConfig = new SqlServerConfig();

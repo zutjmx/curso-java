@@ -45,9 +45,12 @@ public class EjemploPropiedadesSistema {
 
             ps.list(System.out);
 
+            System.gc(); //Garbage collector
+            System.exit(0);
+
         } catch (IOException e) {
-            e.printStackTrace();
-            System.out.println("No existe el archivo: " + e.getMessage());
+            System.err.println("No existe el archivo: " + e.getMessage());
+            System.exit(1);
         }
     }
 

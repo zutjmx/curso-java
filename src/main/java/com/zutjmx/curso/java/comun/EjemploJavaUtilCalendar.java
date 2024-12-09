@@ -49,8 +49,8 @@ public class EjemploJavaUtilCalendar {
                 System.out.println("Fecha: " + fecha);
                 System.out.println("Fecha con formato: " + format.format(fecha));
             } catch (ParseException e) {
-                e.printStackTrace();
-                System.out.println("No se pudo convertir la fecha: " + e.getMessage());
+                System.err.println("No se pudo convertir la fecha: " + e.getMessage());
+                System.exit(1);
             }
             
         }
@@ -88,8 +88,8 @@ public class EjemploJavaUtilCalendar {
                 }
 
             } catch (ParseException e) {
-                e.printStackTrace();
-                System.out.println("No se pudo convertir la fecha: " + e.getMessage());
+                System.err.println("No se pudo convertir la fecha: " + e.getMessage());
+                System.exit(1);
             }
             
         }
