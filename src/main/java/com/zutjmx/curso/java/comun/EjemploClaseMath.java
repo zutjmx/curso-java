@@ -37,5 +37,9 @@ public class EjemploClaseMath {
         double dobleDePI = Math.PI*2;
         System.out.println("dobleDePI: " + dobleDePI);
         System.out.println("Convertir 2PI a grados: " + Math.toDegrees(dobleDePI));
+        System.out.println("Convertir PI a grados: " + Math.toDegrees(Math.PI));
+        System.out.println("Convertir 90 grados a radianes: "+Math.toRadians(90));
+        System.out.println("Seno de 90 grados: "+Math.sin(90));
+        System.out.println("Coseno de 90 grados: "+Math.cos(90));
     }
 }
