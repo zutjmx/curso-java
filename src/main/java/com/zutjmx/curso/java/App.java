@@ -1,6 +1,8 @@
 package com.zutjmx.curso.java;
 
-import com.zutjmx.curso.java.comun.EjecutarProgramaSO;
+import com.zutjmx.curso.java.comun.EjemploClaseMath;
+
+// import com.zutjmx.curso.java.comun.EjecutarProgramaSO;
 
 // import java.io.IOException;
 
@@ -26,8 +28,11 @@ public final class App {
     public static void main(String[] args) {
         System.out.println("App.main()");
 
-        EjecutarProgramaSO ejecutarProgramaSO = new EjecutarProgramaSO();
-        ejecutarProgramaSO.ejecutar();
+        EjemploClaseMath ejemploClaseMath = new EjemploClaseMath();
+        ejemploClaseMath.calculos();
+
+        // EjecutarProgramaSO ejecutarProgramaSO = new EjecutarProgramaSO();
+        // ejecutarProgramaSO.ejecutar();
 
         // EjemploPropiedadesSistema sistema = new EjemploPropiedadesSistema();
         //sistema.obtenerVariablesDeEntorno();
