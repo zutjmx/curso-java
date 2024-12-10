@@ -28,5 +28,14 @@ public class EjemploClaseMath {
         System.out.println("Redondeo del mínmo: "+Math.round(minimo));
         System.out.println("Número PI: " + Math.PI);
         System.out.println("Número PI Redondeado: " + Math.round(Math.PI));
+        System.out.println("Exponencial 1: " + Math.exp(1));
+        System.out.println("Exponencial 2: " + Math.exp(2));
+        System.out.println("Logaritmo natural de 10: " + Math.log(10));
+        System.out.println("10 elevado a la potencia 3: " + Math.pow(10, 3));
+        System.out.println("Raíz cuadrada de 20: " + Math.sqrt(20));
+        System.out.println("Raíz cuadrada de 9: " + Math.sqrt(9));
+        double dobleDePI = Math.PI*2;
+        System.out.println("dobleDePI: " + dobleDePI);
+        System.out.println("Convertir 2PI a grados: " + Math.toDegrees(dobleDePI));
     }
 }
