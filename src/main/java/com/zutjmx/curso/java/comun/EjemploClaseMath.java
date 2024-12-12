@@ -5,6 +5,7 @@ import java.util.Locale;
 import com.github.javafaker.Faker;
 
 public class EjemploClaseMath {
+    
     public void calculos() {
         System.out.println("EjemploClaseMath.calculos()");
         Faker faker = new Faker(Locale.getDefault());
@@ -44,4 +45,13 @@ public class EjemploClaseMath {
         System.out.println("Seno de 180 grados: "+Math.sin(+Math.toRadians(180)));
         System.out.println("Coseno de 180 grados: "+Math.cos(+Math.toRadians(180)));
     }
+
+    public void generaAleatorio() {
+        System.out.println("EjemploClaseMath.generaAleatorio()");
+        double aleatorio = Math.random();
+        System.out.println("aleatorio: " + aleatorio);
+        System.out.println("floor de aleatorio: " + Math.floor(aleatorio));
+        System.out.println("ceil de aleatorio: " + Math.ceil(aleatorio));
+    }
+
 }

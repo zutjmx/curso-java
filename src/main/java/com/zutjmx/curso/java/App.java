@@ -29,7 +29,8 @@ public final class App {
         System.out.println("App.main()");
 
         EjemploClaseMath ejemploClaseMath = new EjemploClaseMath();
-        ejemploClaseMath.calculos();
+        ejemploClaseMath.generaAleatorio();
+        //ejemploClaseMath.calculos();
 
         // EjecutarProgramaSO ejecutarProgramaSO = new EjecutarProgramaSO();
         // ejecutarProgramaSO.ejecutar();
