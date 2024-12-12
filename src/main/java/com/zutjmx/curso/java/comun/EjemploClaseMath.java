@@ -1,6 +1,7 @@
 package com.zutjmx.curso.java.comun;
 
 import java.util.Locale;
+import java.util.Random;
 
 import com.github.javafaker.Faker;
 
@@ -52,6 +53,10 @@ public class EjemploClaseMath {
         System.out.println("aleatorio: " + aleatorio);
         System.out.println("floor de aleatorio: " + Math.floor(aleatorio));
         System.out.println("ceil de aleatorio: " + Math.ceil(aleatorio));
+
+        Random aleatorioObj = new Random();
+        int aleatorioInt = aleatorioObj.nextInt();
+        System.out.println("aleatorioInt: " + aleatorioInt);
     }
 
 }
