@@ -1,6 +1,8 @@
 package com.zutjmx.curso.java;
 
-import com.zutjmx.curso.java.comun.EjemploClaseMath;
+import com.zutjmx.curso.java.comun.ArgumentoLineaComando;
+
+// import com.zutjmx.curso.java.comun.EjemploClaseMath;
 
 // import com.zutjmx.curso.java.comun.EjecutarProgramaSO;
 
@@ -28,11 +30,12 @@ public final class App {
     public static void main(String[] args) {
         System.out.println("App.main()");
 
-        EjemploClaseMath ejemploClaseMath = new EjemploClaseMath();
+        ArgumentoLineaComando argumentoLineaComando = new ArgumentoLineaComando();
+        argumentoLineaComando.argumentos(args);
+
+        // EjemploClaseMath ejemploClaseMath = new EjemploClaseMath();
+        // ejemploClaseMath.calcularAreaCirculo(5); // Para un círculo con radio 5
         //ejemploClaseMath.generaAleatorio();
-
-        ejemploClaseMath.calcularAreaCirculo(5); // Para un círculo con radio 5
-
         //ejemploClaseMath.calculos();
 
         // EjecutarProgramaSO ejecutarProgramaSO = new EjecutarProgramaSO();
