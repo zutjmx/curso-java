@@ -29,7 +29,10 @@ public final class App {
         System.out.println("App.main()");
 
         EjemploClaseMath ejemploClaseMath = new EjemploClaseMath();
-        ejemploClaseMath.generaAleatorio();
+        //ejemploClaseMath.generaAleatorio();
+
+        ejemploClaseMath.calcularAreaCirculo(5); // Para un círculo con radio 5
+
         //ejemploClaseMath.calculos();
 
         // EjecutarProgramaSO ejecutarProgramaSO = new EjecutarProgramaSO();

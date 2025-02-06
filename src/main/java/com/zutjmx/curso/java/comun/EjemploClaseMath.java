@@ -59,4 +59,12 @@ public class EjemploClaseMath {
         System.out.println("aleatorioInt: " + aleatorioInt);
     }
 
+    public void calcularAreaCirculo(double radio) {
+        System.out.println("EjemploClaseMath.calcularAreaCirculo()");
+        double area = Math.PI * Math.pow(radio, 2);
+        System.out.println("El área del círculo con radio " + radio + " es: " + area);
+        // Para mostrar el resultado con menos decimales podemos usar Math.round
+        System.out.println("Área redondeada: " + Math.round(area));
+    }
+
 }
