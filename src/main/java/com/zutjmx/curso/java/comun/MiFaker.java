@@ -3,6 +3,7 @@ package com.zutjmx.curso.java.comun;
 import java.util.Locale;
 
 import com.github.javafaker.Faker;
+import com.zutjmx.curso.java.models.Producto;
 
 public class MiFaker {
 
@@ -17,6 +18,19 @@ public class MiFaker {
         Faker faker = new Faker(Locale.getDefault());
         for (int i = 0; i < n; i++) {
             arreglo[i] = faker.number().numberBetween(1, 100);
+        }
+        return arreglo;
+    }
+
+    public Producto[] generarArregloProductos(int n) {
+        Producto[] arreglo = new Producto[n];
+        Faker faker = new Faker(Locale.getDefault());
+        for (int i = 0; i < n; i++) {
+            Producto producto = new Producto();
+            producto.setIdProducto(faker.number().numberBetween(1, 100));
+            producto.setNombre(faker.commerce().productName());
+            producto.setPrecio(faker.number().numberBetween(100, 1000));
+            arreglo[i] = producto;
         }
         return arreglo;
     }
