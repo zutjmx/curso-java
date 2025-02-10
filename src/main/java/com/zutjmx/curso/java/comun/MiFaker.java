@@ -35,4 +35,13 @@ public class MiFaker {
         return arreglo;
     }
 
+    public String[] generarArregloStrings(int n) {
+        String[] arreglo = new String[n];
+        Faker faker = new Faker(Locale.getDefault());
+        for (int i = 0; i < n; i++) {
+            arreglo[i] = faker.lorem().sentence();
+        }
+        return arreglo;
+    }
+
 }

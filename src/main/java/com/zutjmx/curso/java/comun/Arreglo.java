@@ -20,4 +20,14 @@ public class Arreglo {
             System.out.println("Producto " + i + ": " + arreglo[i]);
         }
     }
+
+    public void arregloStrings() {
+        System.out.println("Arreglo de strings:");
+        MiFaker miFaker = new MiFaker();
+        String[] arreglo = miFaker.generarArregloStrings(10);
+        for (String cadena : arreglo) {
+            System.out.println("Cadena: " + cadena);
+        }        
+    }
+
 }

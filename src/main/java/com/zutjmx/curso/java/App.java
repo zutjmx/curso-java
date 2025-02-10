@@ -35,6 +35,7 @@ public final class App {
         Arreglo arreglo = new Arreglo();
         arreglo.arregloEnteros();
         arreglo.arregloProductos();
+        arreglo.arregloStrings();
 
         // ArgumentoLineaComando argumentoLineaComando = new ArgumentoLineaComando();
         // argumentoLineaComando.calculadora(args);
