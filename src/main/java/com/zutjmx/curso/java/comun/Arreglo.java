@@ -1,5 +1,7 @@
 package com.zutjmx.curso.java.comun;
 
+import java.util.Arrays;
+
 import com.zutjmx.curso.java.models.Producto;
 
 public class Arreglo {
@@ -25,9 +27,15 @@ public class Arreglo {
         System.out.println("Arreglo de strings:");
         MiFaker miFaker = new MiFaker();
         String[] arreglo = miFaker.generarArregloStrings(10);
+        System.out.println("Se imprimen las cadenas sin ordenar:");
         for (String cadena : arreglo) {
             System.out.println("Cadena: " + cadena);
-        }        
+        }
+        Arrays.sort(arreglo);
+        System.out.println("Se imprimen las cadenas ordenadas:");
+        for (String cadena : arreglo) {
+            System.out.println("Cadena: " + cadena);
+        }
     }
 
 }
