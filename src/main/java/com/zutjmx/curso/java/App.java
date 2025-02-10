@@ -1,6 +1,8 @@
 package com.zutjmx.curso.java;
 
-import com.zutjmx.curso.java.comun.ArgumentoLineaComando;
+import com.zutjmx.curso.java.comun.Arreglo;
+
+// import com.zutjmx.curso.java.comun.ArgumentoLineaComando;
 
 // import com.zutjmx.curso.java.comun.EjemploClaseMath;
 
@@ -30,8 +32,11 @@ public final class App {
     public static void main(String[] args) {
         System.out.println("App.main()");
 
-        ArgumentoLineaComando argumentoLineaComando = new ArgumentoLineaComando();
-        argumentoLineaComando.calculadora(args);
+        Arreglo arreglo = new Arreglo();
+        arreglo.arregloEnteros();
+
+        // ArgumentoLineaComando argumentoLineaComando = new ArgumentoLineaComando();
+        // argumentoLineaComando.calculadora(args);
         //argumentoLineaComando.argumentos(args);
 
         // EjemploClaseMath ejemploClaseMath = new EjemploClaseMath();
