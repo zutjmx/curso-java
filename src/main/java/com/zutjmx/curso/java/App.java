@@ -31,7 +31,8 @@ public final class App {
         System.out.println("App.main()");
 
         ArgumentoLineaComando argumentoLineaComando = new ArgumentoLineaComando();
-        argumentoLineaComando.argumentos(args);
+        argumentoLineaComando.calculadora(args);
+        //argumentoLineaComando.argumentos(args);
 
         // EjemploClaseMath ejemploClaseMath = new EjemploClaseMath();
         // ejemploClaseMath.calcularAreaCirculo(5); // Para un círculo con radio 5
