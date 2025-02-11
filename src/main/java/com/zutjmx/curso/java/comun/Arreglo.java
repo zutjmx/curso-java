@@ -9,6 +9,12 @@ public class Arreglo {
         System.out.println("Arreglo de enteros:");
         MiFaker miFaker = new MiFaker();
         int[] arreglo = miFaker.generarArregloEntero(10);
+        System.out.println("Se imprimen los elementos del arreglo sin ordenar:");
+        for (int i = 0; i < arreglo.length; i++) {
+            System.out.println("Elemento " + i + ": " + arreglo[i]);
+        }
+        Arrays.sort(arreglo);
+        System.out.println("Se imprimen los elementos del arreglo ordenados:");
         for (int i = 0; i < arreglo.length; i++) {
             System.out.println("Elemento " + i + ": " + arreglo[i]);
         }
