@@ -31,6 +31,14 @@ public class Arreglo {
             System.out.println("Elemento " + i + ": " + arreglo[i]);
             i++;
         } while (i < longitud);
+        System.out.println("Se imprimen los elementos del arreglo usando ciclo for inverso version 1:");
+        for (int j = 0; j < longitud; j++) {
+            System.out.println("Elemento " + (longitud-1-j) + ": " + arreglo[longitud-1-j]);
+        }
+        System.out.println("Se imprimen los elementos del arreglo usando ciclo for inverso versión 2:");
+        for (int j = longitud-1; j >= 0; j--) {
+            System.out.println("Elemento " + j + ": " + arreglo[j]);
+        }
     }
 
     public void arregloProductos() {
