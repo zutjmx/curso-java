@@ -19,6 +19,18 @@ public class Arreglo {
         for (int i = 0; i < longitud; i++) {
             System.out.println("Elemento " + i + ": " + arreglo[i]);
         }
+        System.out.println("Se imprimen los elementos del arreglo usando un while:");
+        int i = 0;
+        while (i < longitud) {
+            System.out.println("Elemento " + i + ": " + arreglo[i]);
+            i++;
+        }
+        System.out.println("Se imprimen los elementos del arreglo usando un do-while:");
+        i = 0;
+        do {
+            System.out.println("Elemento " + i + ": " + arreglo[i]);
+            i++;
+        } while (i < longitud);
     }
 
     public void arregloProductos() {
