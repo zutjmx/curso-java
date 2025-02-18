@@ -1,6 +1,7 @@
 package com.zutjmx.curso.java.comun;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 import com.zutjmx.curso.java.models.Producto;
 
@@ -51,6 +52,11 @@ public class Arreglo {
             System.out.println("Producto " + i + ": " + arreglo[i]);
         }
         System.out.println("Se imprimen los productos usando un foreach:");
+        for (Producto producto : arreglo) {
+            System.out.println("Producto: " + producto);
+        }
+        System.out.println("Se imprimen los productos de forma inversa usando Collections:");
+        Collections.reverse(Arrays.asList(arreglo));
         for (Producto producto : arreglo) {
             System.out.println("Producto: " + producto);
         }
