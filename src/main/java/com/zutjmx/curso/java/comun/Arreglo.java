@@ -77,4 +77,66 @@ public class Arreglo {
         }
     }
 
+    public void ordenamientoBurbuja() {
+        System.out.println("Ordenamiento burbuja con enteros:");;
+        MiFaker miFaker = new MiFaker();
+        int[] arreglo = miFaker.generarArregloEntero(10);
+        int longitud = arreglo.length;
+        System.out.println("Se imprimen los elementos del arreglo sin ordenar:");
+        
+        for (int i = 0; i < longitud; i++) {
+            System.out.println("Elemento " + i + ": " + arreglo[i]);
+        }
+        
+        int contador = 0;
+        for (int i = 0; i < longitud - 1; i++) {
+            for (int j = 0; j < longitud - i - 1; j++) {
+                if (arreglo[j] > arreglo[j + 1]) {
+                    int temp = arreglo[j];
+                    arreglo[j] = arreglo[j + 1];
+                    arreglo[j + 1] = temp;
+                }
+                contador++;
+            }
+        }
+        
+        System.out.println("Número de comparaciones: " + contador);
+        System.out.println("Se imprimen los elementos del arreglo ordenados:");
+        for (int i = 0; i < longitud; i++) {
+            System.out.println("Elemento " + i + ": " + arreglo[i]);
+        }
+
+    }
+
+    public void ordenamientoBurbujaCadena() {
+        System.out.println("Ordenamiento burbuja con cadenas:");
+        MiFaker miFaker = new MiFaker();
+        String[] arreglo = miFaker.generarArregloStrings(10);
+        int longitud = arreglo.length;
+        
+        System.out.println("Se imprimen las cadenas sin ordenar:");
+        for (String cadena : arreglo) {
+            System.out.println("Cadena: " + cadena);
+        }
+        
+        int contador = 0;
+        for (int i = 0; i < longitud - 1; i++) {
+            for (int j = 0; j < longitud - i - 1; j++) {
+                if (arreglo[j].compareTo(arreglo[j + 1]) > 0) {
+                    String temp = arreglo[j];
+                    arreglo[j] = arreglo[j + 1];
+                    arreglo[j + 1] = temp;
+                }
+                contador++;
+            }
+        }
+        
+        System.out.println("Número de comparaciones: " + contador);
+        System.out.println("Se imprimen las cadenas ordenadas:");
+        for (String cadena : arreglo) {
+            System.out.println("Cadena: " + cadena);
+        }
+
+    }
+
 }

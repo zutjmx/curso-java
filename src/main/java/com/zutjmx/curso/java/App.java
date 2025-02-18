@@ -33,9 +33,11 @@ public final class App {
         System.out.println("App.main()");
 
         Arreglo arreglo = new Arreglo();
-        arreglo.arregloEnteros();
-        arreglo.arregloProductos();
-        arreglo.arregloStrings();
+        arreglo.ordenamientoBurbuja();
+        arreglo.ordenamientoBurbujaCadena();
+        // arreglo.arregloEnteros();
+        // arreglo.arregloProductos();
+        // arreglo.arregloStrings();
 
         // ArgumentoLineaComando argumentoLineaComando = new ArgumentoLineaComando();
         // argumentoLineaComando.calculadora(args);
